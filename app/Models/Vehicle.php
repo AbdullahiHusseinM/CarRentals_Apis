@@ -15,7 +15,12 @@ class Vehicle extends Model
     use HasFactory;
 
     protected $fillable = [
-        'vehicle_id'
+        'vehicle_id',
+        'specification_id',
+        'type_id',
+        'detail_id',
+        'service_id',
+        'carmodel_id'
     ];
 
 

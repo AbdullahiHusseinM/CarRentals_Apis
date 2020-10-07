@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\AuthApi\LoginController;
+use App\Http\Controllers\VehicleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('register', [RegisterController::class, 'registerApi']);
 Route::post('/token', [LoginRegister::class, 'login']);
+
+Route::post('specs', [VehicleController::class, 'storeSpecificationsDetails']);

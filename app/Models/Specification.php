@@ -11,12 +11,13 @@ class Specification extends Model
 
     protected $fillable = 
     [
-        'number_of seats',
-        'types_of_seats',
+        'number_of_seats',
+        'type_of_seats',
         'number_of_doors',
         'gearbox_type',
         'sunroof',
         'engine_capacity'
+        
     ];
 
 

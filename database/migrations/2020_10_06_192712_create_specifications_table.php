@@ -15,8 +15,7 @@ class CreateSpecificationsTable extends Migration
     {
         Schema::create('specifications', function (Blueprint $table) {
             $table->id();
-            $table->integer('vehicle_id');
-            $table->string('number_of_seats');
+            $table->integer('number_of_seats');
             $table->string('type_of_seats');
             $table->integer('number_of_doors');
             $table->string('gearbox_type');
